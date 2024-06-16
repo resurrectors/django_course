@@ -1,0 +1,10 @@
+python -m venv venv
+./venv/scripts/activate
+python -m pip install Django
+django-admin startproject django_course_site
+python manage.py startapp <component_name>
+python manage.py runserver
+
+
+
+https://github.com/academind/django-practical-guide-course-code.git
