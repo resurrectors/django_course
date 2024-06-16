@@ -5,7 +5,6 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 
 def monthly_challenge(request, month):
-    # month = request.GET.get("month")
     print(request)
     if month == "january":
         return HttpResponse("Hello, January!")
