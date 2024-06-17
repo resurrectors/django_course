@@ -34,7 +34,8 @@ def monthly_challenge(request, month):
     try:
         challenge_text = monthly_challenges[month.lower()]
         return render(request, "challenges/challenge.html", {
-            "text": challenge_text
+            "text": challenge_text,
+            "month": month.capitalize()
         })
     except Exception:
         return HttpResponseNotFound("This is not supported")
