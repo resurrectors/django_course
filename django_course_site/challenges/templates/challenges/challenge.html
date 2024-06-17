@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ month|title }} Challenge</title>
-</head>
+  </head>
 
-<body>
-    <h1>{{ month|title }} Challenge</h1>{{ text }}
-</body>
-
+  <body>
+    <h1>{{ month|title }} Challenge</h1>
+    {% if text %} {{ text }} {% else %}
+    <p>There is no challenge for {{ month }}.</p>
+    {% endif %}
+  </body>
 </html>
