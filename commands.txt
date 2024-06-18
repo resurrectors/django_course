@@ -8,3 +8,6 @@ python manage.py runserver
 
 
 https://github.com/academind/django-practical-guide-course-code.git
+
+
+for css fonts https://fonts.google.com/
