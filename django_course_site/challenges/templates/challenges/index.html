@@ -1,5 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
 {% block page_title %}Challenge{% endblock %} 
+{% block css_style %}
+  <link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+{% endblock css_style %}
 {% block body %}
   {% include "challenges/include/header.html" with link_name="Go to this page"%}
   <ol>
