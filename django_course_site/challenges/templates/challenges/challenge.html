@@ -1,6 +1,7 @@
 {% extends "base.html" %} 
 {% block page_title %}{{ month|title }} Challenge {% endblock page_title %}
 {% block body %}
+  {% include "challenges/include/header.html" with link_name="Go to index" %}
   <h1>{{ month|title }} Challenge</h1>
   {% if text %} 
     {{ text }}
