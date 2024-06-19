@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Starting Page{% endblock title %}
+{% block body %}
+<h1>Welcome to Blogs</h1>
+<p>I am shubham, author of these blogs.</p>
+
+{% for blog in blogs %}
+    {% include "blog/include/blog.html" %}
+{% endfor %}
+{% endblock body %}

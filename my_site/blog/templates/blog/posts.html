@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}
+All Blogs
+{% endblock title %}
+{% block body %}
+{% for blog in blogs %}
+    {% include "blog/include/blog.html" %}
+{% endfor %}
+{% endblock body %}
