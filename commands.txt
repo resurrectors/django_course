@@ -5,6 +5,11 @@ django-admin startproject django_course_site
 python manage.py startapp <component_name>
 python manage.py runserver
 
+python manage.py shell
+
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py migrate
 
 
 https://github.com/academind/django-practical-guide-course-code.git
