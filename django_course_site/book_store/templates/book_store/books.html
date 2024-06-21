@@ -3,7 +3,15 @@
 Books page
 {% endblock title %}
 {% block body %}
+<h3>Total no of books: {{total_no_of_books}}</h3>
 <ul>
-    <li>Book 1</li>
+    {% for book in books %}
+        <li>{{book.title}} - {{book.author.first_name}}</li>
+    {% endfor %}
 </ul>
+<ol>
+    {% for author in authors %}
+        <li>{{author.first_name}} {{author.last_name}} - {{author.book_set.count}}
+    {% endfor %}
+</ol>
 {% endblock body %}
